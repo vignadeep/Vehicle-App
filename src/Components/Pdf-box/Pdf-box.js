@@ -1,3 +1,4 @@
+import { informError } from "../../Services/ToastService";
 import "./Pdf-box.css"
 import { useState } from "react";
 
@@ -15,11 +16,17 @@ const Pdfbox = ({label='text', onChange, onInvalid}) => {
     // update function to check and set PDF for use in this function
     const onUpdate = (e) => {
         if(e && e.target && e.target.files.length !== 0) {
-            setPdf(e.target.files[0].name)
+            let currentFile = e.target.files[0];
+            if(currentFile.type === 'application/pdf') {
+                setPdf(currentFile.name)
+                onChange(e)
+            } else {
+                informError("Please select a PDF file!")
+                setPdf('Select a PDF File')
+            }
         } else {
             setPdf('Select a PDF File')
         }
-        onChange(e)
     } 
 
 return (
