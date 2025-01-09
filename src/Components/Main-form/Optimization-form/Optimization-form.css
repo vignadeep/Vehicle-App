@@ -1,0 +1,24 @@
+.optForm {
+    padding-top: 2rem;
+    width: 50%;
+    border-right: 2px solid black;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+.buttonPosition {
+    padding-top: 7%;
+    padding-left: 21vw;
+}
+
+button {
+    color: white;
+    font-size: 30px;
+    background-color: grey;
+    padding: 0.7rem;
+}

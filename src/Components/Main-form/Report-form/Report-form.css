@@ -1,0 +1,13 @@
+.reportForm {
+    padding-left: 7%;
+    padding-top: 2rem;
+    width: 50%;
+    border-right: 2px solid black;
+}
+
+.reportSubmitPosition {
+    position: relative;
+    padding-top: 27.5vh;
+    padding-left: 23vw;
+
+}

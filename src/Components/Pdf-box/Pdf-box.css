@@ -1,0 +1,29 @@
+
+.filebutton {
+    display: none
+  }
+
+.uploadButtonPosition {
+    padding-top: 4%;
+    padding-left: 142%;
+    position: relative;
+  }
+
+.uploadButton {
+    color: white;
+    padding: 0.7rem;
+    font-size: 30px;
+    background-color: grey;
+}
+
+.pdflabel {
+    margin-bottom: 10%;
+}
+
+.pdfparent {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    align-items: center;
+    padding-top: 3rem;
+}
